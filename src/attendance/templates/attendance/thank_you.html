@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Thank you</h1>
+
+{% endblock %}
+
+
+{% block script %}
+	<script type="text/javascript">
+	$(document).ready(
+		setTimeout( function(){window.location.href="{% url 'index' %}";},2000)
+	);
+	</script>
+
+{% endblock %}
