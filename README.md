@@ -14,5 +14,5 @@ Attendance System using Computer-Vision
 ### 4. First choose register option if not registered.
 ###   then mark attendance using webcam.
 ### 5. To check attendance go to admin panel (127.0.0.1:8000/admin)
-###--> to access admin panel first create superuser
+### --> to access admin panel first create superuser
 ###### run command : ./manage.py createsuperuser
