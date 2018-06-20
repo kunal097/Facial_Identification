@@ -5,7 +5,7 @@ Attendance System using Computer-Vision
 ## Steps to be followed:
 
 ### 1.Install all the packages specified in the requirement.txt file
-###### sudo pip3 install <package name with specified version>
+###### sudo pip3 install &lt; package name with specified version &gt;
 
 ### 2. Go to src folder and run the server
 ###### ./manage.py runserver  (give executable permission)
