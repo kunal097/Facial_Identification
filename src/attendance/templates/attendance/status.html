@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+     
+      <th scope="col">Name</th>
+      <th scope="col">Status</th>
+      <th scope="col">Date</th>
+    
+    </tr>
+  </thead>
+
+
+
+  <tbody>
+
+
+{% for i in cal_obj %}
+
+    <tr>
+  
+      <td>{{ i.student }}</td>
+      {% if i.status == 'P' %}
+        <td> Present </td>
+      {% else %}  
+        <td> Apsent </td>
+      {% endif %}  
+      <td> {{ i.date }}</td>
+    
+    </tr>
+    <tr>
+
+      {% endfor %}
+
+   
+  </tbody>
+</table>
+
+
+
+
+
+
+
+</table>
+
+
+{% endblock %}
+

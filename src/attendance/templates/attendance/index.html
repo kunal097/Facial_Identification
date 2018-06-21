@@ -2,9 +2,20 @@
 
 {% block content %}
 
-<a class="btn btn-primary" href="{% url 'register' %}" role="button">Register</a>
+
+
+
+    
+  <div class="col-xs-4" style="padding-top:300px;">
+ <a class="btn btn-primary" href="{% url 'register' %}" role="button">Register</a>
 <a class="btn btn-primary" href="{% url 'mark_att' %}" role="button">Mark Attendance</a>
-<a class="btn btn-primary" href="#" role="button">View Report</a>
+<a class="btn btn-primary" href="{% url 'chk_status' %}" role="button">View Report</a>
+
+</div>
+
+
+
+
 
 
 {% endblock %} 

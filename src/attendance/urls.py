@@ -23,4 +23,5 @@ urlpatterns = [
     path('',views.IndexView.as_view() , name='index'),
     path('reg/',views.RegisterView.as_view() , name='register'),
     path('mark/',views.MarkView.as_view() , name='mark_att'),
+    path('check-status/',views.StatusView.as_view() , name='chk_status'),
 ]
