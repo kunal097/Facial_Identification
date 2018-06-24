@@ -8,6 +8,8 @@ class Student(models.Model):
 
 	stu_id = models.AutoField(primary_key=True)
 	name = models.CharField(max_length=20 , unique=True)
+	sem = models.CharField(max_length=20)
+	branch = models.CharField(max_length=20)
 
 
 	def __str__(self):
@@ -17,7 +19,7 @@ class Student(models.Model):
 
 
 class Calander(models.Model):
-	student = models.ForeignKey(Student , on_delete=models.CASCADE)
+	student = models.OneToOneField(Student , on_delete=models.CASCADE )
 	date = models.DateField(auto_now_add=True)
 	status = models.CharField(max_length=5 , default='A')
 

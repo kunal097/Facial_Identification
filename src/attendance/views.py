@@ -88,7 +88,7 @@ class MarkView(View):
 		try:
 
 			# check the status of the attendance of that student
-			cal_obj = Calander.Objects.get(student=obj)
+			cal_obj = Calander.objects.get(student=obj)
 
 			
 			
